@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+  <title>Challenge</title>
+</head>
+
+<body>
+  <header id="logo">
+    <img onclick="window.location.reload();" src="./assets/img/logo.png" alt="logotipo da senha">
+  </header>
+  <main id="container">
+    <section id="section-input">
+      <textarea name="message" id="input-message" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+
+      <div id="action-section">
+        <p id="info-text">
+          <img src="./assets/img/Vector.png" alt="Ponto de Exclamação" class="icon">
+          <i class="fa-solid fa-circle-info"></i>
+          Apenas letras minúsculas e sem acento.
+        </p>
+        <div id="btn-section">
+          <button onclick="encrypt()" class="btn btn-solid">Criptografar</button>
+          <button onclick="decrypt()" class="btn btn-outline">Descriptografar</button>
+        </div>
+      </div>
+    </section>
+    <section id="section-output">
+      <div id="no-output">
+        <img id="img-no-output" src="./assets/img/esqueceu.png"
+          alt="Imagem utilizada para ilustrar que não possui nenhuma mensagem">
+        <h3 id="title-no-output">Nenhuma mensagem encontrada</h3>
+        <p id="text-no-output">Digite um texto que você deseja criptografar ou descriptografar</p>
+      </div>
+      <div id="output-message">
+        <p id="resulting-message"></p>
+        <button onclick="copy()" class="btn-copy btn-outline">Copiar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <p >
+      Desenvolvido por Vitória Monteiro.
+    </p>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
